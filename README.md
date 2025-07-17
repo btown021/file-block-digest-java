@@ -10,6 +10,9 @@
 Spring 环境可直接引入 `【curl C】`
 需要`hutool`依赖
 
+支持`windows`,`mac`,`linux`
+
+二进制文件直接放入`classpath`即可
 
 
 # 测试代码
