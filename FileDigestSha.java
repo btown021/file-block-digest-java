@@ -2,7 +2,6 @@ import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.io.resource.ClassPathResource;
 import cn.hutool.core.io.resource.Resource;
 import cn.hutool.core.util.RuntimeUtil;
-import com.lingen.common.exception.ServiceException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.ResourceUtils;
 
@@ -98,7 +97,7 @@ public class FileDigestSha {
             return blockSha;
         } catch (Exception e) {
             log.error("文件计算BlockSha错误", e);
-            throw new ServiceException("文件`{}`计算BlockSha错误", file.getAbsolutePath(), e);
+            throw new RuntimeException(e);
         }
     }
 }
