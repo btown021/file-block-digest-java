@@ -32,11 +32,14 @@ ArrayList<String> blockSha = FileDigestSha.getBlockSha(new File("sha_calc_demo.t
 文件大小 `5999998`字节。
 
 通过 test_file_block_digest 工具输出：
+
 part_num: 1 end_offset: 2097152 cumulate_sha1: 5186fee37e9f7e77a1f6bea8d4e32638d5186d44
 
 part_num: 2 end_offset: 4194304 cumulate_sha1: cf540965f3190bc0c6367147ab0ac64dc9eff6a0
 
 part_num: 3 end_offset: 5999998 cumulate_sha1: bda1e884e1cb23a5cbdea73d2e00e23baa72d2f5
+
+
 
 表明需要分`3`块来上传，对应的 block_sha为：
 
